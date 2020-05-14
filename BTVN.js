@@ -56,14 +56,48 @@ for (i = 0; i < inPut.length - 1; i++) {
 }
 */
 ////////////// Bài 2:
-// let ip = prompt(` nhập vào các chuỗi cách nhau bởi dấu , nhé: `).split(`,`);
-// console.log(ip);
-// for (let i = 0; i < ip.length; i++) {
-//     let tach = ip[i].split(``);
-//     for (let j = 0; j < tach.length; j++) {
-//         if(tach[j] === )
+// function kiemTraChuoiDoiXung(n) {
+//     let flag = false;
+//     let dem =0;
+//     if (n.length % 2 == 0) { /// chuoi chan 
+//         for (let i = 0; i <= n.length/2 -1; i++) {
+//             if (n[i] === n[n.length - 1 - i]) {
+//                dem ++;
+//             }
+//         }
+//         if(dem == (n.length/2)) flag = true;
 //     }
+//     else {
+//         dem =0;
+//         for (let j = 0; j < Math.floor(n.length/2); j++) {  // chuoi le
+//             if (n[j] === n[n.length - 1 - j]) {
+//                 dem++;
+//             }
+//         }
+//         if(dem == Math.floor(n.length/2) ){
+//             flag = true;
+//         }
+//     }
+
+//     if (flag == true) {
+//         return 1;
+//     }
+//     else return 0;
 // }
+// let ip = prompt(` nhập vào các chuỗi cách nhau bởi dấu , nhé: `).split(`,`);
+// console.log(`chuoi vua nhap vao la: ` + ip);
+// console.log(`vi tri cac chuoi doi xung la:`);
+
+
+// for (let i = 0; i < ip.length; i++) {
+//     if (kiemTraChuoiDoiXung(ip[i]) == 1) {
+//         console.log(i);
+//     }
+//     else console.log(`Not found`);
+    
+// }
+
+
 
 // ///////////// bài 03:
 // let hang = prompt(` nhap vao so hang cua ma tran `);
